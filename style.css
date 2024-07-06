@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'robotolight';
+    src:
+        url('fonts/roboto-light-webfont.woff2') format('woff2'),
+        url('fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubik_doodle_shadowregular';
+    src:
+        url('fonts/rubikdoodleshadow-regular-webfont.woff2') format('woff2'),
+        url('fonts/rubikdoodleshadow-regular-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background: url('spacex-PIOgkhaF3WA-unsplash.jpg');
+    background-size: cover;
+    color: white;
+    font-family: 'robotolight';
+}
+
+:link {
+    color: white;
+}
+
+:visited {
+    color: #999;
+}
+
+#title {
+    position: relative;
+    top: 30vh;
+    left: 5vw;
+    font-family: 'rubik_doodle_shadowregular';
+    font-size: 6rem;
+    width: 30vw;
+    text-shadow: 5px 5px 10px rgb(112, 88, 141);
+}
+
+#img-credit {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+#container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 50vw;
+    height: 90vh;
+    margin: 5vh;
+    background-color: rgba(145, 129, 156, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    align-items: center;
+}
+
+#container > div {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    box-sizing: border-box;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.3);
+}
+
+#container p {
+    margin: 30px 100px 0 30px;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+form {
+    padding-left: 5%;
+}
+
+form > div {
+    display: inline-block;
+    width: 40%;
+    margin: 0 30px 10px 0;
+}
+
+label {
+    font-size: 0.6em;
+    letter-spacing: 0.15em;
+    color: #333;
+}
+
+input {
+    font-family: 'robotolight';
+    font-weight: 600;
+    font-size: 1rem;
+    /* letter-spacing: ; */
+    width: 80%;
+    height: 4vh;
+    padding: 0 0.6rem 0 0.6rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border .1s, box-shadow .1s;
+}
+
+input:focus {
+    /* outline: 2px solid blue; */
+    /* outline: none; */
+    border: 2px solid rgb(93, 136, 255);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+input[type="password"]:invalid {
+    border-color: rgba(255, 0, 0, 0.734);
+}
+
+#submit {
+    margin: 30px 0 20px;
+    border: none;
+    background-color: #474e68;
+    color: white;
+    font-family: 'robotolight';
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    border-radius: 5px;
+    width: 12em;
+    height: 2.5em;
+    transition: background-color 0.1s, transform 0.05s ease-in-out;
+}
+
+#submit:hover, #submit:focus {
+    background-color: #6b7497;
+}
+
+#submit:active {
+    transform: scale(0.9);
+}
+
+#login {
+    font-size: 1rem;
+}
